@@ -1,0 +1,92 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+}
+.title{
+    color:lightseagreen;
+    word-spacing: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.form{
+    width: 40%;
+    padding:2rem 1rem;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    width:100%;
+    font-size: 1.2rem;
+    text-indent: 0.5rem;
+    outline:none;
+    border-radius: 5px;
+    border-style: none;
+    padding: 0.7rem 0;
+}
+.form button{
+    background-color: mediumseagreen;
+    color: white;
+    font-size: 1.5rem;
+    padding:0.5rem;
+    margin-top: 2rem;
+    outline:none;
+    border-style: none;
+    border-radius: 0.5rem;
+}
+
+#message{
+    width: 40%;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgb(241, 241, 241);
+    display: none;
+}
+#message h2{
+    color: slategrey;
+}
+#message p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    word-spacing: 0.2rem;
+    letter-spacing: 1px;
+}
+
+.invalid{
+    color:red;
+}
+.invalid:before{
+    position: relative;
+    content:"✖";
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.valid{
+    color:rgb(52, 182, 52);
+}
+.valid:before{
+    position: relative;
+    content: "✔";
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+@media (max-width:830px){
+    .title{
+        font-size: 1.5rem;
+    }
+    .form{
+        width: 80%;
+    }
+    #message{
+        width: 80%;
+    }
+}
